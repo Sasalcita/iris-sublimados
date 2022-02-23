@@ -1,0 +1,67 @@
+@import "../partials/varibales";
+
+body{
+ background-image: $colorprincipal;
+}
+
+.nav__item {
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin: 0 0 0 50px;
+    padding: 25px 0 25px 0;
+  }
+  
+  .nav__hyperlink {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav__redes {
+    /* display: inline-block; */
+  }
+  
+  .div__informacion {
+    color: black;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 244, 0.966)), to(rgba(18, 216, 67, 0.466)));
+    background-image: linear-gradient(rgba(255, 255, 244, 0.966), rgba(18, 216, 67, 0.466));
+    margin: 0 19% 0 26%;
+    padding: 50px 10px;
+    position: absolute;
+    top: 30%;
+    grid-area: cuerpo;
+    background-size: cover;
+  }
+  
+  .div__contenedor--presentacion {
+    margin-bottom: 50px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "cabeza";
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cabeza;
+  }
+  
+  body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 224, 24, 0.74)), to(rgba(223, 223, 79, 0.705)));
+    background-image: linear-gradient(rgba(24, 224, 24, 0.74), rgba(223, 223, 79, 0.705));
+    color: black;
+  } 
+  
+  footer{
+    background-color: map-get($Colores, bg );
+    @extend %pie;
+    
+       
+     
+  }
+ 
+  @include mediaQuery (mobile, 500px)
+  
+
+
+  /*# sourceMappingURL=main.css.map */
